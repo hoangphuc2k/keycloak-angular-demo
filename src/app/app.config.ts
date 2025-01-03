@@ -29,6 +29,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
           onLoad: 'check-sso',
           silentCheckSsoRedirectUri:
             window.location.origin + '/silent-check-sso.html',
+          enableLogging: true,
         },
       });
     });
